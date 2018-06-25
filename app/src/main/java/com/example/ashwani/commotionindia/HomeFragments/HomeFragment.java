@@ -45,8 +45,9 @@ TabLayout tabLayout;
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getChildFragmentManager());
-        adapter.addFragment(new HomeWhatsNewFragment(), "ONE");
-        adapter.addFragment(new HomeJoinUsFragment(), "TWO");
+        adapter.addFragment(new HomeWhatsNewFragment(), "Whats New");
+        adapter.addFragment(new HomeAboutusFragment(), "About us");
+        adapter.addFragment(new HomeJoinUsFragment(), "Join us");
         viewPager.setAdapter(adapter);
     }
 class ViewPagerAdapter  extends FragmentPagerAdapter {

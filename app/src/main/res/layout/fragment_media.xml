@@ -1,13 +1,89 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="MediaFragment.MediaFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="10dp"
+        >
 
-</FrameLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/media_imageview"
+
+            android:src="@mipmap/ic_launcher"
+            />
+        />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="200dp"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="10dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/media_imageview2"
+
+            android:src="@mipmap/ic_launcher"
+            />
+        />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view3"
+        android:layout_gravity="center"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="200dp"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="10dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/media_imageview3"
+
+            android:src="@mipmap/ic_launcher"
+            />
+        />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view4"
+        android:layout_gravity="center"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="10dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/media_imageview4"
+
+            android:src="@mipmap/ic_launcher"
+            />
+        />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
