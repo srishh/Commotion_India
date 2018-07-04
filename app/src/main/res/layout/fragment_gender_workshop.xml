@@ -1,0 +1,262 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="GenderFragment.GenderWorkshopFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:paddingBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:paddingTop="12dp"
+                android:text="WORKSHOPS"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                tools:elegantTextHeight="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Book us for a workshop in your school or college on any gender inequality issue or Volunteer to teach dance or art to young women in our rehabilitation program."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="12dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/gen3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender Sensitising
+"
+                        android:textAppearance="@style/TextAppearance.Compat.Notification.Info.Media"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Though we have come a long way, unhealthy perceptions of gender still exist. In this workshop, students engage with the ongoing conversations on patriarchy."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <Button
+                        android:id="@+id/gender_sensitising"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button"
+                        android:minHeight="0dp"
+                        android:text="  Know More  "
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="12dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/gen4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Good Touch, Bad Touch
+"
+                        android:textAppearance="@style/TextAppearance.Compat.Notification.Info.Media"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="This one and a half hour workshop is available for elementary school and middle school. Through a series of fun activities and media presentations students are equipped with skills to identify and resist sexual abuse."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <Button
+                        android:id="@+id/good_bad_touch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button"
+                        android:text="  Know More  "
+                        android:minHeight="0dp"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="12dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/gen9" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adolescent Education
+"
+                        android:textAppearance="@style/TextAppearance.Compat.Notification.Info.Media"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Our adolescent education curriculum for 5th-8th graders can be covered in 15 sessions for each grade."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <Button
+                        android:id="@+id/adolescent_edu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button"
+                        android:text="  Know More  "
+                        android:minHeight="0dp"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:paddingTop="12dp"
+                android:text="COMMUNITY BUILDING"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                tools:elegantTextHeight="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Volunteer to teach dance or art to young women in our rehabilitation program. "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="12dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/gen2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Therapy and Care for survivors of human trafficking"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="It has been a privilege to  partner with different rehabilitation homes for survivors. Over the years we've developed some great relationships and had the opportunity to see a few of the girls we've worked with come through into a place of healing.
+
+Our programme offers individual counselling, life-skills workshops, and dance and art therapy workshops."
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+            <Button
+                android:id="@+id/teach_dance_art"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Teach Dance/Art  "
+                android:background="@drawable/button"
+                android:minHeight="0dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
