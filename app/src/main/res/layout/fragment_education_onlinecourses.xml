@@ -1,13 +1,147 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="EducationFragment.EducationOnlinecoursesFragment">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="100dp">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:paddingTop="12dp"
+                android:text="ONLINE COURSES"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                tools:elegantTextHeight="true" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingVertical="@dimen/activity_vertical_margin"
+                android:weightSum="3"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Growing Up"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edu2"
+                    android:layout_weight="1"
+                    android:paddingVertical="@dimen/activity_vertical_margin"
+                    android:adjustViewBounds="true"/>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign up"
+                    android:minHeight="0dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/growing_up_sign_up"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingVertical="@dimen/activity_vertical_margin"
+                android:weightSum="3"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Pornography Addiction"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edu21"
+                    android:layout_weight="1"
+                    android:paddingVertical="@dimen/activity_vertical_margin"
+                    android:adjustViewBounds="true"/>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign up"
+                    android:minHeight="0dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/porn_addiction_sign_up"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingVertical="@dimen/activity_vertical_margin"
+                android:weightSum="3"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Internet Addiction"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edu20"
+                    android:layout_weight="1"
+                    android:paddingVertical="@dimen/activity_vertical_margin"
+                    android:adjustViewBounds="true"/>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign up"
+                    android:textAllCaps="false"
+                    android:minHeight="0dp"
+                    android:background="@drawable/button"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/internet_addiction_sign_up"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -29,44 +29,47 @@
                 tools:elegantTextHeight="true" />
 
             <TextView
+                android:paddingVertical="@dimen/activity_vertical_margin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Participate in our latest research survey on gender issues or help us conduct a survey in your school or college.
-
-"
+                android:text="Participate in our latest research survey on gender issues or help us conduct a survey in your school or college."
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
+                android:paddingVertical="@dimen/activity_vertical_margin"
                 android:adjustViewBounds="true"
-                android:src="@drawable/gen5"
-                app:srcCompat="@drawable/gen55" />
+                android:src="@drawable/gen55"/>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:weightSum="2">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:layout_weight="1"
                     tools:text="A research study amongst adult survivors of sexual abuse and gender violence in India" />
 
                 <Button
                     android:id="@+id/participate_research_gender"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/holo_red_light"
-                    android:backgroundTint="@android:color/holo_red_light"
+                    android:background="@drawable/button"
                     android:gravity="center"
-                    android:includeFontPadding="true"
+                    android:minHeight="0dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:text="  Participate  "
                     android:textColor="@android:color/white"
-                    android:text="  Participate  " />
+                    />
 
             </LinearLayout>
 

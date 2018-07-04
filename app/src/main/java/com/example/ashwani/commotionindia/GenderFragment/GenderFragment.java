@@ -16,8 +16,6 @@ import com.example.ashwani.commotionindia.R;
 import java.util.ArrayList;
 import java.util.List;
 
-import GenderFragment.GenderBlogsFragment;
-
 /**
  * A simple {@link Fragment} subclass.
  */
