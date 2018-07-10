@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    tools:context=".HomeFragments.HomeWhatsNewFragment">
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,9 +11,8 @@
         android:orientation="vertical"
         android:gravity="center"
         android:paddingBottom="100dp"
-        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
-        android:layout_marginVertical="@dimen/activity_vertical_margin">
-
+        android:layout_marginVertical="@dimen/activity_vertical_margin"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,23 +20,216 @@
             android:orientation="vertical"
             android:gravity="center">
 
-            <com.google.android.youtube.player.YouTubePlayerView
-                android:id="@+id/youtube_view"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="@dimen/activity_vertical_margin"
-                />
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/home6"
+                android:layout_weight="3"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:adjustViewBounds="true"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="a sound in the city"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            </LinearLayout>
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="|| EVENTS"
+                android:textStyle="italic"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textColor="@android:color/holo_red_dark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/text_view"
+                android:src="@drawable/event"
+                android:clickable="true"
+                android:id="@+id/event"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="|| BLOGS"
+                android:textStyle="italic"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textColor="@android:color/holo_red_dark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="2"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:text="Life After Acid Attack"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="May 29, 2018 | Ritu"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:text="The first time I saw my face after the acid attack, I thought it would have been better if I died. People started treating me differently. Earlier the..."/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="0dp"
+                        android:textColor="@android:color/white"
+                        android:textAllCaps="false"
+                        android:background="@drawable/button"
+                        android:text="Read More"
+                        android:id="@+id/blog3"
+                        android:layout_gravity="left"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/gen8"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="|| UPCOMING WORKSHOPS AND TRAININGS"
+                android:textStyle="italic"
                 android:layout_marginVertical="@dimen/activity_vertical_margin"
-                android:textColor="@android:color/black"
-                android:text="GENDER"
-                android:gravity="center"/>
+                android:textColor="@android:color/holo_red_dark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_marginVertical="@dimen/activity_vertical_margin">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/gen9" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adolescent Education"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/TextAppearance.Compat.Notification.Info.Media"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Our adolescent education curriculum for 5th-8th graders can be covered in 15 sessions for each grade."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <Button
+                        android:id="@+id/adolescent_edu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button"
+                        android:text="  Know More  "
+                        android:minHeight="0dp"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingVertical="@dimen/activity_vertical_margin"
+                android:weightSum="3"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edu13"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Social Conscience"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="To inspire students to be aware of issues of concern and use their skills to make a difference." />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book us"
+                    android:textAllCaps="false"
+                    android:minHeight="0dp"
+                    android:background="@drawable/button"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/social_conscience_book_us"/>
+
+            </LinearLayout>
 
         </LinearLayout>
-    </LinearLayout>
 
+    </LinearLayout>
 </ScrollView>
