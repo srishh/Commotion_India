@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+    android:gravity="left"
+    android:paddingBottom="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edit_text_box"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/et_contactus_name"
+        android:hint="NAME*"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edit_text_box"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/et_contactus_email"
+        android:hint="EMAIL*"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edit_text_box"
+        android:id="@+id/et_contactus_subject"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:hint="SUBJECT"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edit_text_box"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/et_contactus_phone"
+        android:hint="PHONE"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edit_text_box"
+        android:id="@+id/et_contactus_message"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:hint="MESSAGE"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="SEND"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:id="@+id/send_contact_us"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="133 3rd Floor, Lane 1,
+Westend Marg, Saidulajab,
+New Delhi - 110030, India
+Close to Saket Metro, Gate #2"
+                android:textColor="@android:color/black" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/map" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:weightSum="4">
+
+            <ImageButton
+                android:id="@+id/facebook_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/home3" />
+
+            <ImageButton
+                android:id="@+id/instagram_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@android:color/transparent"
+                android:clickable="true"
+                android:src="@drawable/home4" />
+
+            <ImageButton
+                android:id="@+id/twitter_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@android:color/transparent"
+                android:clickable="true"
+                android:src="@drawable/home26" />
+
+            <ImageButton
+                android:id="@+id/youtube_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@android:color/transparent"
+                android:clickable="true"
+                android:src="@drawable/home5" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+

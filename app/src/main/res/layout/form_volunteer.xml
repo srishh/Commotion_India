@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginVertical="@dimen/activity_vertical_margin"
+    android:layout_marginHorizontal="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volunteer With Us"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edit_text_box"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/et_volunteer_name"
+        android:hint="Name*"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edit_text_box"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/et_volunteer_email"
+        android:hint="Email*"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edit_text_box"
+        android:id="@+id/et_volunteer_phone"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:hint="Phone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edit_text_box"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/et_volunteer_duration"
+        android:hint="How much time would you like to give?"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:minLines="3"
+        android:gravity="top|left"
+        android:maxLines="6"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edit_text_box"
+        android:id="@+id/et_volunteer_skills"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:hint="Let us know some of your skills"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="SEND"
+        android:layout_gravity="right"
+        android:textColor="@android:color/white"
+        android:id="@+id/send_volunteer"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+</LinearLayout>

@@ -2,25 +2,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="top"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context="MediaFragment.MediaFragment"
     android:layout_marginVertical="@dimen/activity_vertical_margin"
     android:layout_marginHorizontal="@dimen/activity_horizontal_margin">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MEDIA"
-        android:layout_gravity="center"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:textColor="@android:color/holo_red_dark"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/home23"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="Inspiring change in the dominant media-discourse and social conscience of this generation."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginVertical="@dimen/activity_vertical_margin"
         android:gravity="center"
         android:weightSum="2">
 
